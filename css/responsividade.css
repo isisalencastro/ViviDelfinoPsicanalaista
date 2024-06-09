@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --fonte-padrao:  'Kanit', sans-serif;
+    --fonte-fina: 'Old Standard TT', serif;
+    --color01: #C4B2FE;
+    --color02: #B4CFCA;
+}
+/* --------------------------PRESET------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.navegacao{
+    display: none;
+}
+
+#inicio{
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        padding: 0;
+        height: 86px;
+    }
+
+    #zap{
+        background-color: var(--color01);
+        width: 64px;
+        height: 64px;
+        margin: 20px;
+        position: fixed;
+        right: 0%;
+        bottom: 0;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulos{
+        display: none;
+    }
+
+    .logo-mobile, .btn-menu, .nav-mobile{
+        display: none;
+    }
+
+    #logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    #logo h1{
+        font-family: var(--fonte-fina);
+        color: var(--color01);
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    #logo h2{
+        letter-spacing: 2px;
+    }
+
+    .navegacao{
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        padding: 16px 24px;
+    }
+
+    .navegacao nav ul{
+        display: flex;
+    }
+
+    .navegacao nav ul li{
+        margin-left: 16px;
+    }
+
+    .navegacao li a{
+        color: black;
+        transition: 200ms;
+    }
+
+    .navegacao li a:hover{
+        color: #B4CFCA;
+    }
+
+    .navegacao li:last-child a{
+        color: var(--color01);
+    }
+
+    .navegacao li:last-child a:hover{
+        color: #B4CFCA;
+    }
+/* ------------------------------------- INICIO ---------------------------------------- */
+
+#inicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 92lvh;
+    flex-wrap: wrap-reverse;
+}
+
+#apresentacao-mobile{
+    display: none;
+}
+
+#apresentacao p{
+    font-size: 1.5em;
+    max-width: 780px;
+}
+
+.btn-qse{
+    margin-top: 24px;
+}
+
+    
+/* --------------------------------- INSTAGRAM VIVI ------------------------------------------ */
+
+}
+
+@media screen and (min-width: 650px) {
+
+    
+
+    #instagram-secao{
+        display: none;
+    }
+
+    #insta-desk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #b4cfca;
+    }
+
+    #insta-desk > div{
+        background-color: white;
+        margin: 32px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 64px;
+        border-radius: 50px;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.582);
+    }
+
+    .instagram-card{
+        box-shadow: none;
+        margin: 0%;
+    }
+
+    .foto-perfil{
+        padding: 0px 24px;
+        border-radius: 100px;
+    }
+
+    .seguir-mensagem{
+        padding: 0px 24px;
+    }
+
+    .logo-insta{
+        padding: 0px 24px;
+    }
+}
+/* --------------------------------------------------SOBRE MIM---------------------------------------------- */
+@media screen and (min-width: 800px){
+    #sobremim-mobile{
+        display: none;
+    }
+
+    #sobremim-desk{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 96px 32px;
+        min-height: 100vh;
+    }
+
+    #titulos-sobremim-desk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #titulos-sobremim-desk h2{
+        font-size: 1.5em;
+        color: var(--color01);
+        letter-spacing: 2px;
+    }
+
+    #titulos-sobremim-desk h3{
+        font-size: 2.5em;
+        font-family: var(--fonte-fina);
+        text-transform: uppercase;
+    }
+
+    .conteudo-sobremim{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .conteudo-sobremim img{
+        width: 250px;
+        border-radius: 32px;
+    }
+
+    .fotos-links{
+        margin-right: 24px;
+        margin-top: 16px;
+    }
+
+    .links-sobremim a{
+        width: 120px;
+        text-align: center;
+    }
+
+    .conteudo-sobremim p{
+        max-width: 536px;
+        margin-left: 32px;
+        font-size: large;
+        letter-spacing: 1.2px;
+        text-align: justify;
+    }
+}
+
+/* -------------------------------------------- BENEFÍCIOSSSSS ------------------------------------------------ */
+
+@media screen and (min-width: 850px) {
+    #beneficios-mobile{
+        display: none;
+    }
+
+    #beneficios-desk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        background-color: var(--color02);
+        padding: 24px;
+        min-height: 100vh;
+    }
+
+    #beneficios-desk hgroup{
+        margin-top: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #beneficios-desk h2{
+        letter-spacing: 2px;
+        font-size: 1.9em;
+    }
+
+    #beneficios-desk h3{
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    #beneficios-desk > section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 32px 0px;
+    }
+    #beneficios-desk > section > div{
+        background-color: white;
+        margin: 16px;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 32px;
+        text-align: center;
+        border-radius: 24px;
+        border-bottom: 2px solid var(--color01);
+    }
+
+    #beneficios-desk > section > div > h4{
+        margin: 32px 0px;
+        font-size: 1.2em;
+    }
+
+    #beneficios-desk > section > div > p{
+        font-size: 1.2em;
+    }
+
+    #beneficios-desk a{
+        color: white;
+        font-size: 1.2em;
+        background-color: var(--color01);
+        padding: 16px;
+        border-radius: 16px;
+        transition: 200ms;
+        margin-bottom: 44px;
+    }
+
+    #beneficios-desk a:hover{
+        padding: 16px 24px;
+        transition: 200ms;
+    }
+}
+
+/* ----------------------------------- DEPOIMENTOS ---------------------------------------------------- */
+@media screen and (min-width: 500px){
+
+}
+
+
+/* --------------------------------- FOOOTTTEEEERRRRR ---------------------------------------- */
+
+@media screen and (min-width: 431px) {
+    .contatos{
+        width: 300px;
+    }
+
+    .contatos:nth-child(1){
+        font-size: 16px;
+    }
+
+}
+
