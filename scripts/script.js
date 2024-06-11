@@ -36,7 +36,7 @@ const testimonials = [
   { text: "Só queria te agradecer, pois você vem me mostrando coisas que sozinha eu jamais conseguiria me dar conta. Obrigada!", author: "Sandra" },
   { text: "Sou muito grata por ter te conhecido no momento em que eu mais precisava e que achava que era o fim, mas era apenas o começo.", author: "Juliana" },
   { text: "Graças a Deus e as sessões de terapia com a Vivi, tenho tido uma visão diferente das situações e melhorei a confiança em mim.", author: "Bruna" },
-  { text: "Passando só pra te agradecer, por aqui estou dando pequenos passos que estão fazendo a diferença, tudo graças a sua ajuda.", author: "Fernanda"},
+  { text: "Passando só pra te agradecer, por aqui estou dando pequenos passos que estão fazendo a diferença, tudo graças a sua ajuda.", author: "Nice"},
   { text: "Depois de dias e dias chorando, hoje estou sorrindo em saber que a vida pode ser leve e podemos sim nos ver com mais amor  nos dar valor.", author: "Helena"}
 ];
 
